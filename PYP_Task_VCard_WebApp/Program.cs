@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using PYP_Task_VCard_WebApp;
+using PYP_Task_VCard_WebApp.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddVCardServices();
+
+// Configure Db Connection
+builder.Services.AddDbContext<VCardContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 var app = builder.Build();
 
@@ -9,7 +18,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -22,6 +30,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=VCards}/{action=Index}/{id?}");
 
 app.Run();
