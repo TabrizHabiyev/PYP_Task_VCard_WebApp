@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PYP_Task_VCard_WebApp", "PYP_Task_VCard_WebApp\PYP_Task_VCard_WebApp.csproj", "{8D61127A-D5B3-4A04-9599-5485B41045E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D61127A-D5B3-4A04-9599-5485B41045E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D61127A-D5B3-4A04-9599-5485B41045E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D61127A-D5B3-4A04-9599-5485B41045E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D61127A-D5B3-4A04-9599-5485B41045E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD6041F4-FAEB-483A-AD51-0C87285DAEFF}
+	EndGlobalSection
+EndGlobal
